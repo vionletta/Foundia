@@ -155,7 +155,8 @@ if (isset($_POST['update'])) {
 
             <div class="form-group">
                 <label>Nomor Telepon (WhatsApp)</label>
-                <input type="text" name="phone" placeholder="Nomor Telepon (WhatsApp)" value="<?= htmlspecialchars($item['phone']); ?>" required>
+                <input type="text" name="phone" placeholder="Nomor Telepon (WhatsApp)" value="<?= htmlspecialchars($_SESSION['user']['no_telp']); ?>" readonly>
+                <small class="form-hint">Nomor telepon sesuai dengan data registrasi Anda.</small>
             </div>
 
             <div class="form-group">

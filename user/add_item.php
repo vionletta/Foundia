@@ -113,7 +113,8 @@ if (isset($_POST['submit'])) {
 
             <div class="form-group">
                 <label>Nomor Telfon</label>
-                <input type="text" name="phone" placeholder="+62xxxxxxxxxxx" required>
+                <input type="text" name="phone" value="<?= htmlspecialchars($_SESSION['user']['no_telp']); ?>" placeholder="+62xxxxxxxxxxx" readonly>
+                <small class="form-hint">Nomor telepon sesuai dengan data registrasi Anda.</small>
             </div>
 
             <div class="form-group">
